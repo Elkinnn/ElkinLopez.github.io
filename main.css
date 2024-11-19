@@ -137,3 +137,66 @@ footer {
     text-align: justify;
 }
 
+.experience-intro {
+    font-size: 1.2em;
+    color: #666;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 800px;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-details {
+    padding: 20px;
+    text-align: center;
+}
+
+.project-details h3 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+    font-family: 'Georgia', serif;
+}
+
+.project-details p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+.project-link {
+    color: #FFD700;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-bottom: 1em;
+}
+
+.project-link:hover {
+    color: #333;
+}
+
+.project-image {
+    width: 100%;
+    max-width: 450px; 
+    border-radius: 10px;
+    margin-top: 1em;
+}
+
