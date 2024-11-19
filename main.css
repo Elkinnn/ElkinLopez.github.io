@@ -109,3 +109,31 @@ footer {
     margin-top: 10px;
 }
 
+.objective-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+}
+
+.objective-card h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.objective-card p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+    text-align: justify;
+}
+
