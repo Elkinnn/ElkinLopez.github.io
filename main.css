@@ -200,3 +200,55 @@ footer {
     margin-top: 1em;
 }
 
+.tech-intro {
+    text-align: center;
+    font-size: 1.1em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 2em;
+}
+
+.tech-category {
+    margin-bottom: 3em;
+}
+
+.tech-category h3 {
+    font-size: 1.8em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #FFD700;
+    display: inline-block;
+    padding-bottom: 0.5em;
+}
+
+.tech-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #f9f9f9;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 1em auto;
+    max-width: 600px;
+}
+
+.tech-logo {
+    width: 80px;
+    height: 80px;
+}
+
+.tech-description h4 {
+    font-size: 1.4em;
+    color: #333;
+    font-family: 'Georgia', serif;
+}
+
+.tech-description p {
+    text-align: left;
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
