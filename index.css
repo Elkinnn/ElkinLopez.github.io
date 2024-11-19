@@ -1,91 +1,139 @@
-/* Estilos generales */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
 }
 
-/* Portada de Bienvenida */
 #cover {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(135deg, #444, #666);
+    background: linear-gradient(135deg, #1a1a1a, #333);
     color: white;
     text-align: center;
     position: relative;
+    overflow: hidden;
 }
 
 .cover-content {
+    position: relative;
+    z-index: 2;
     max-width: 800px;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
 }
 
 .image-container {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto 20px;
-    border: 3px solid #FFD700;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 5px solid #FFD700;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .cover-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; 
 }
 
-h1 {
-    font-size: 2.2em;
+@keyframes glow {
+    from {
+        box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+    }
+    to {
+        box-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
+    }
+}
+
+
+.animated-text {
+    font-size: 2.8em;
+    font-weight: 700;
     margin-bottom: 0.5em;
-    font-weight: bold;
+    animation: fadeIn 1s ease-in-out;
 }
 
-h2 {
-    font-size: 1.4em;
+.animated-subtitle {
+    font-size: 1.5em;
     color: #FFD700;
     margin-bottom: 1em;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
-p {
-    font-size: 1.1em;
+.intro-text {
+    font-size: 1.2em;
     margin-bottom: 1em;
     font-style: italic;
-    color: #ccc;
+    color: #ddd;
+    animation: fadeIn 2s ease-in-out;
 }
 
-/* Botón mejorado */
-a {
-    display: inline-block;
-    padding: 0.8em 1.5em;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pulse-button {
+    padding: 0.8em 2em;
     color: #333;
     background-color: #FFD700;
     border: none;
     border-radius: 5px;
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+    cursor: pointer;
+    animation: pulse 1.5s infinite;
 }
 
-a:hover {
-    background-color: #e0c700;
-    color: #222;
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
-/* Fondo de partículas */
+.social-icons {
+    margin-top: 20px;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+    filter: invert(1);
+}
+
 .particles {
     position: absolute;
     top: 0;
@@ -93,5 +141,6 @@ a:hover {
     right: 0;
     bottom: 0;
     background-image: url('https://www.transparenttextures.com/patterns/dark-matter.png');
-    opacity: 0.1;
+    opacity: 0.2;
+    z-index: 1;
 }
